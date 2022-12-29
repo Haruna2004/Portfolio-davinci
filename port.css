@@ -89,7 +89,7 @@ header {
     width: 50%;
 }
 
-.header-info{
+.hero-section{
     color: #fff;
     margin-top: 5%;
     margin-bottom: 20%;
@@ -99,21 +99,21 @@ header {
     justify-content: space-evenly;
     align-items: center;
 }
-.header-info h3{
+.hero-section h3{
     font-size: 40px;
 }
-.header-info h2{
+.hero-section h2{
     font-size: 60px;
 }
-.header-info h2 span{
+.hero-section h2 span{
     color: red;
     font-family: cursive;
 }
-.header-info p{
+.hero-section p{
     font-size: 30px;
     color: #088178;
 }
-.header-info .about-img{
+.hero-section .about-img{
     width: 50%;
     opacity: 0.9;
  }
@@ -377,16 +377,16 @@ button{
     #close i{
          background: none;
     }
-    .header-info{
+    .hero-section{
         margin-top: 20%;
     }
-    .header-info h3{
+    .hero-section h3{
     font-size: 15px;        
     }
-    .header-info h2{
+    .hero-section h2{
     font-size: 20px;        
     }
-    header .header-info{
+    header .hero-section{
         margin-top: 30%;
     }
     
@@ -408,10 +408,10 @@ button{
         align-items: center;
     }    
 
-    .header-info{
+    .hero-section{
         flex-direction: column;
     }
-    .header-info .about-img{
+    .hero-section .about-img{
         margin: 20px;
     }
  
