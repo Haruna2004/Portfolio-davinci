@@ -8,27 +8,30 @@
 }
 html{
     background-color: #000;
+    scroll-behavior: smooth;
 }
 header {
-   position: relative;
-    
+    position: sticky;   
+    top: 0;
+    z-index: 9999;
+    background-color: #000;
 }
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
     box-shadow: 0 20px 40px rgb(58, 56, 56);
 }
 .header .header-img{
     margin: 20px;
-    margin-top:-88px ;
+    margin-top:-81px ;
     cursor: pointer;
     position: relative;
 }
 .header .header-img::after{
     position: absolute;
     margin-left: 10px;
+    /* margin-top: 5px; */
     content: '';
     width: 25px;
     height: 25px;
@@ -86,27 +89,35 @@ header {
     width: 50%;
 }
 
-header .header-info{
+.header-info{
     color: #fff;
-    margin-top: 15%;
+    margin-top: 5%;
+    margin-bottom: 20%;
     margin-left: 20px;
     line-height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-header .header-info h3{
+.header-info h3{
     font-size: 40px;
 }
-header .header-info h2{
+.header-info h2{
     font-size: 60px;
    
 }
-header .header-info h2 span{
+.header-info h2 span{
     color: red;
     font-family: cursive;
 }
-header .header-info p{
+.header-info p{
     font-size: 30px;
     color: #088178;
 }
+.header-info .about-img{
+    width: 50%;
+    opacity: 0.9;
+ }
 .menu-bar{
     display: none;
 }
@@ -121,7 +132,10 @@ header .header-info p{
 .about{
     color: #fff;
     margin-top: 50px;
+    margin-bottom: 12.5em;
     z-index: 999;
+    scroll-margin-top: 40vh;
+    
 }
 .about-title, .section{
     position: relative;
@@ -169,9 +183,11 @@ header .header-info p{
     display: flex;
     width: 100%;
 }
-.about-section .about-img{
-   width: 50%;
 
+
+#Service{
+    scroll-margin-top: 18vh;
+    margin-bottom: 20%;
 }
 
 .service-list{
@@ -179,6 +195,8 @@ header .header-info p{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     overflow: hidden;
+    margin-top: 7em;
+    margin-bottom: 7em;
 }
 .service-list div{
     background: #262626;
@@ -209,9 +227,8 @@ header .header-info p{
     font-size: 30px;
     margin: 20px;
 }
-.portfoli{
-    display: flex;
-    max-width: 100%;
+.portfolio{
+    scroll-margin-top: 20vh;
 }
 .portfolio-section{
   display: grid;
