@@ -228,6 +228,7 @@ header {
 }
 .portfolio{
     scroll-margin-top: 20vh;
+    margin-bottom: 10%;
 }
 .portfolio-section{
   display: grid;
@@ -247,8 +248,6 @@ header {
     align-items: center;
     width: 95%;
     margin: 20px;
-   
-
 }
 
 .contact-form{
